@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Kenneth Hu">
+    <title>기부 페이지</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <script src="js/web3.min.js"></script>
+	
+
+</head>
+<!-- 기부페이지 구현, 1:기부 대상자 선택하기, 2: 기부금 송금하기-->
+<body>
+    <div class="wrap">
+		<ul class="select">
+			<h1>기부 대상 선택하기</h1>
+			<li>
+				<div class = "icon_image">
+					<img src="image/person1.png">
+				</div>
+				<ul class="coments">
+					<li class="coment1">1번 대상자</li>
+					<li class="coment2"><br>#지갑 주소</li>
+					<li class="coment3" id="firstAddress">0xfaccA83f6C89052a6cB2B2f1e9DF18ADcB810ca4</li>
+					<li><br>위의 주소를 클릭시 자동으로 선택</li>
+
+				</ul>	
+			</li>
+			<li>
+	
+				<div class = "icon_image">
+					<img src="image/person2.png">
+				</div>
+				<ul class="coments">
+					<li class="coment1">2번 대상자</li>
+					<li class="coment2"><br>#지갑 주소</li>
+					<li class="coment3" id="secondAddress">0xD1Ae9E4BB46557c3AD44E1d190227E776f12B1a5</li>
+					<li><br>위의 주소를 클릭시 자동으로 선택</li>
+				</ul>	
+
+			</li>
+			<li>
+				<div class = "icon_image">
+					<img src="image/person3.png">
+				</div>
+				<ul class="coments">
+					<li class="coment1">3번 대상자</li>
+					<li class="coment2"><br>#지갑 주소</li>
+					<li class="coment3" id="thirdAddress">0x69e83F90edf405b3DA286Bd503087e71F0D34a31</li>
+					<li><br>위의 주소를 클릭시 자동으로 선택</li>
+				</ul>	
+			</li>
+		</ul>
+
+		<div class="container">
+
+        	<h1>기부하기</h1>
+
+        	<label for="name" class="col-lg-2 control-label"><h3>NodeInfo</h3></label>
+        	<input id="NodeInfo" type="text" placeholder="ganache와 연동되지 않았습니다.  먼저 ganache를 실행하세요.">
+		
+			<hr>
+
+        	<label for="name" class="col-lg-2 control-label"><h3>잔액조회</h3></label>
+			<p>지갑 계좌 : &nbsp &nbsp<input id="Account" type="text" placeholder="지갑 계좌를 입력해주세요."> </p>
+        	<p>잔액 : &nbsp &nbsp<input id="Balance" type="text" placeholder="계좌를 입력 후 조회하기 버튼을 눌러 잔액을 확인하세요."></p>
+		 	<button class="coment4" id="checkBalance">조회하기</button>
+
+			<hr>
+			<label for="name" class="col-lg-2 control-label"><h3>송금하기</h3></label>
+			<p>기부자 지갑 : &nbsp &nbsp <input id="From" type="text" placeholder="지갑 계좌를 입력해주세요."> </p>
+			<p>기부 대상 : &nbsp &nbsp <input id="To" type="text" placeholder="기부 대상을 선택하세요."></p>
+        	<p>기부 금액 : &nbsp &nbsp<input id="Amount" type="text" placeholder="기부 금액을 숫자로 입력해주세요."></p>
+
+			<div class="buttons">
+        		<button class="coment4" id="Transfer">송금하기</button>
+				<button type='button' class="coment4" id="modal_btn">영수증 조회</button>
+				<button type='button' onclick="location.href='index.html'" class="coment4" id="modal_btn">홈페이지로 돌아가기</button>
+				<div class="black_bg"></div>
+				<div class="modal_wrap">
+    				<div class="modal_close"><a href="#"></a></div>
+    				<div>
+    					<h1 class="receipt_title">donation receipt</h1>
+						<h4 class="receipt_text">계좌:<p id="receiptAccount"></p></h4>
+						<h4 class="receipt_text">선택 기관:<p id="receiptSelect"></p></h4>
+						<h4 class="receipt_text">기부 금액:<p id="receiptAmount"></p></h4>
+						<h4 class="receipt_text">감사합니다.^^</h4>
+    				</div>
+				</div>
+			</div>
+
+        	<p class="hash">Transaction Hash : &nbsp  <span id="Tx"></span></p>
+		</div>
+    </div>
+
+	<script src="js/click.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+
+	<!-- web3.js 를 통해서 1대1 기부금 송금기능 구현-->
+    <script>
+    
+		$( document ).ready(function() {
+			console.log( "ready!" );
+			
+			if (typeof web3 !== 'undefined') {
+				web3 = new Web3(web3.currentProvider);
+			} else {
+					// set the provider you want from Web3.providers
+				web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
+			}
+			web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
+			/* Get Node Info */
+			web3.eth.getNodeInfo(function(error, result){
+				if(error){
+					console.log( "error" ,error);
+				}
+				else{
+					console.log( "result",result );
+					$('#NodeInfo').val(result);
+				}
+			});
+			
+			/*Get Balance */
+			web3.eth.getAccounts(function(error, accounts) {
+				if(error) {
+					console.log(error);
+				}
+				$('#Account').val(accounts[0]);
+				web3.eth.getBalance(accounts[0]).then(function(result){
+					console.log( "Balance : " ,web3.utils.fromWei(result, 'ether'));
+					$('#Balance').val(web3.utils.fromWei(result, 'ether'));
+				});
+			});
+			
+			$('#checkBalance').click(function() {
+			    var _account = $('#Account').val();
+				web3.eth.getBalance(_account).then(function(result){
+					console.log( "Balance : " ,web3.utils.fromWei(result, 'ether'));
+					$('#Balance').val(web3.utils.fromWei(result, 'ether'));
+				});
+			});
+			
+			
+			/* Transfer */
+			$('#Transfer').click(function() {
+				$('#Tx').text('');
+				var _from = $('#From').val();
+			    var _to = $('#To').val();
+				var _Amount = $('#Amount').val();
+				var txnObject = {
+					"from":_from,
+					"to": _to,
+					"value": web3.utils.toWei(_Amount,'ether'),
+					// "gas": 21000,         (optional)
+					// "gasPrice": 4500000,  (optional)
+					// "data": 'For testing' (optional)
+					// "nonce": 10           (optional)
+				}
+			
+				web3.eth.sendTransaction(txnObject, function(error, result){
+					if(error){
+						console.log( "Transaction error" ,error);
+					}
+					else{
+						var txn_hash = result; //Get transaction hash
+						$('#Tx').text(txn_hash);
+					}
+				});
+				
+			});
+			
+		
+		});
+	
+    </script>
+
+</body>
+</html>
