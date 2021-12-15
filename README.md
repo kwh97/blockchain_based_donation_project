@@ -4,4 +4,4 @@
 주제 : 블록체인 기반 기부 서비스<br><br>
 설명 : 8조 프로젝트 소스코드 입니다.<br><br>
 구성 : HTML, CSS, JAVASCRIPT, WEB3JS<br><br>
-contact : zzzang0512@naver.com<br><br>
+contact : zzzang0512@naver.com, 010-9255-4247<br><br>
