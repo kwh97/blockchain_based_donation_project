@@ -5,3 +5,10 @@
 설명 : 8조 프로젝트 소스코드 입니다.<br><br>
 구성 : HTML, CSS, JAVASCRIPT, WEB3JS<br><br>
 contact : zzzang0512@naver.com, 010-9255-4247<br><br>
+
+index.html: 기부 안내 메인 페이지<br>
+style.css: 기부 안내 페이지 css파일<br>
+index_donation.html: 기부 페이지<br>
+main.css: 기부 페이지 css파일<br>
+click.js: 각종 기능 구현(송금, 영수증 등)<br>
+
