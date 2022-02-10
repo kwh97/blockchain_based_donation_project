@@ -27,15 +27,39 @@
 <h2>프로젝트 목적</h2>
 <img src="https://user-images.githubusercontent.com/82254874/153393686-02dd93d3-63e1-4d86-9a89-e7a3a4dfa60d.jpg" width="800" height="400">
 <br>
-<h3>1. 기존에 우려되었던 기부금 횡령 및 비리 문제를 방지</h3><br>
-<h3>2. 거래내역 및 영수증 조회를 통해 과정의 투명성을 보장</h3><br>
-<h3>3. 최소한의 정보와 과정으로 누구나 쉽게 기부할 수 있는 낮은 접근성 형성</h3><br>
+<strong>1. 기존에 우려되었던 기부금 횡령 및 비리 문제를 방지</strong><br><br>
+<strong>2. 거래내역 및 영수증 조회를 통해 과정의 투명성을 보장</strong><br><br>
+<strong>3. 최소한의 정보와 과정으로 누구나 쉽게 기부할 수 있는 낮은 접근성 형성</strong><br><br>
 
 <br><br>
 
 <h2>페이지 구성</h2>
 <br>
 <h3>1. 상단 메인 페이지</h3>
+<img src="https://user-images.githubusercontent.com/82254874/153410829-9d0dce22-6409-4415-8986-5bb59a191f45.jpg" width="600" height="400">
+<br><strong>>>기부페이지로 이동 가능한 'GIVE NOW' 메뉴, 클릭 시 해당하는 설명을 확인할 수 있는 나머지 '소개, 서비스, 팀원, CONTACT' 메뉴</strong>
+<br><br><br>
+<h3>2. INTRO</h3>
+<img src="https://user-images.githubusercontent.com/82254874/153410888-aef07cb5-e0bf-437a-8619-a0bcd8f83367.jpg" width="600" height="400">
+<img src="https://user-images.githubusercontent.com/82254874/153410930-43586829-853d-404f-a767-8824778f1d16.jpg" width="600" height="400">
+<br><strong>>>기존 기부 서비스가 가지고 있는 문제 ----> 문제에 대한 해결책</strong>
+<br><br><br>
+<h3>3. SERVICE</h3>
+<img src="https://user-images.githubusercontent.com/82254874/153410969-c5cb64cd-3437-4d3e-9ca0-b65bde8d36f0.jpg" width="600" height="600">
+<br><strong>>>Q&A 방식으로 서비스 및 수익 창출 계획 설명</strong>
+<br><br><br>
+<h3>4. TEAM & CONTACT</h3>
+<img src="https://user-images.githubusercontent.com/82254874/153411022-04967917-cffa-4ab8-ae14-3592e0f34450.jpg" width="600" height="600">
+<br><strong>>>팀원 소개 및 CONTACT</strong>
+<br><br><br>
+<h3>5. 기부페이지</h3>
+<img src="https://user-images.githubusercontent.com/82254874/153411022-04967917-cffa-4ab8-ae14-3592e0f34450.jpg" width="600" height="600">
+
+
+
+
+
+
 
 
 
