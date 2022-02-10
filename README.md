@@ -30,4 +30,4 @@ click.js: 각종 기능 구현(송금, 영수증 등)<br>
 <br><br>
 
 <h1>설계 목적</h1>
-![photo](https://user-images.githubusercontent.com/82254874/153393068-e074e170-4301-4e20-bb36-f97fdc0f09e6.jpg)
+<img src="https://user-images.githubusercontent.com/82254874/153393068-e074e170-4301-4e20-bb36-f97fdc0f09e6.jpg">
