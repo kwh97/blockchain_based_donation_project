@@ -5,29 +5,29 @@
 
 🛠<strong> 사용 툴 및 라이브러리 </strong>🛠   
 
-<img src="https://img.shields.io/badge/VisualStudioCode-32AAFF?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Ganache-8B4F1D?style=flat-square&logo=ganache&logoColor=CD1039"/> <img src="https://img.shields.io/badge/Web3.js-FF8C0A?style=flat-square&logo=web3.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/VisualStudioCode-32AAFF?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Ganache-8B4F1D?style=flat-square&logo=Ganache&logoColor=CD1039"/> <img src="https://img.shields.io/badge/Web3.js-FF8C0A?style=flat-square&logo=web3.js&logoColor=white"/>
 
 <br>
 
-📒<strong> 사용 언어 </strong>📒
+📒<strong> 사용 기술 </strong>📒
 
 <img src="https://img.shields.io/badge/HTML-red?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-blue?style=flat-square&logo=css3&logoColor=로고색"/> <img src="https://img.shields.io/badge/JAVASCRIPT-yellow?style=flat-square&logo=javascript&logoColor=white"/>
 
 <br>
 
 🔗<strong> 사이트 예시 : </strong>  www.naver.com <br><br>
-📧<strong> Contact : </strong> zzzang0512@naver.comd
+📧<strong> Contact : </strong> zzzang0512@naver.com <br><br>
+🔖<strong> Blog : </strong> <a href="kwh97.tistory.com">kwh97.tistory.com</a> 
 
 
 
-
-index.html: 기부 안내 메인 페이지<br>
-style.css: 기부 안내 페이지 css파일<br>
-index_donation.html: 기부 페이지<br>
-main.css: 기부 페이지 css파일<br>
-click.js: 각종 기능 구현(송금, 영수증 등)<br>
 
 <br><br>
 
-<h1>설계 목적</h1>
+<h2>프로젝트 목적</h2>
 <img src="https://user-images.githubusercontent.com/82254874/153393686-02dd93d3-63e1-4d86-9a89-e7a3a4dfa60d.jpg" width="800" height="400">
+<br>
+<h3>1. 기존에 우려되었던 기부금 횡령 및 비리 문제를 방지</h3><br>
+<h3>2. 거래내역 및 영수증 조회를 통해 과정의 투명성을 보장</h3><br>
+<h3>3. 최소한의 정보와 과정으로 누구나 쉽게 기부할 수 있도록 낮은 접근성 형성</h3><br>
+
