@@ -71,6 +71,9 @@
 <strong>web3.min.js - web3js에 대해 간단하게 만들어진 라이브러리 파일, web3를 서버에 설치할 필요없이 파일만을 이용</strong><br><br>
 <strong>donation.js - 암호화폐 잔액조회, 기부금 송금을 위한 파일(오픈소스 활용)</strong><br><br>
 <strong>click.js - 페이지내 다양한 동적 기능을 구현하기 위한 파일(영수증 조회 등)</strong><br><br>
+<img src="https://user-images.githubusercontent.com/82254874/153419610-cfe12ba3-1dd7-4486-9a15-4300532bcd57.jpg" width="500" height="600">
+
+
   
   
 
