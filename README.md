@@ -5,7 +5,8 @@
 
 🛠<strong> 사용 툴 및 라이브러리 </strong>🛠   
 
-<img src="https://img.shields.io/badge/VisualStudioCode-32AAFF?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Ganache-8B4F1D?style=flat-square&logo=Ganache&logoColor=CD1039"/> <img src="https://img.shields.io/badge/Web3.js-FF8C0A?style=flat-square&logo=web3.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/VisualStudioCode-32AAFF?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Ganache-8B4F1D?style=flat-square&logo=Ganache&logoColor=CD1039"/> <img src="https://img.shields.io/badge/Web3.js-FF8C0A?style=flat-square&logo=web3.js&logoColor=white"/><br>
+(Ganache - 가상의 암호화폐(이더리움) 및 계좌번호를 부여하는 프로그램으로 web3.js 와 연동하여 사용) 
 
 <br>
 
@@ -71,7 +72,63 @@
 <strong>web3.min.js - web3js에 대해 간단하게 만들어진 라이브러리 파일, web3를 서버에 설치할 필요없이 파일만을 이용</strong><br><br>
 <strong>donation.js - 암호화폐 잔액조회, 기부금 송금을 위한 파일(오픈소스 활용)</strong><br><br>
 <strong>click.js - 페이지내 다양한 동적 기능을 구현하기 위한 파일(영수증 조회 등)</strong><br><br>
-<img src="https://user-images.githubusercontent.com/82254874/153419610-cfe12ba3-1dd7-4486-9a15-4300532bcd57.jpg" width="500" height="600">
+
+```c
+//영수증 팝업창 출력 부분
+window.onload = function() {
+
+    function onClick() {
+        document.querySelector('.modal_wrap').style.display ='block';
+        document.querySelector('.black_bg').style.display ='block';
+    }   
+    function offClick() {
+        document.querySelector('.modal_wrap').style.display ='none';
+        document.querySelector('.black_bg').style.display ='none';
+    }
+
+    document.getElementById('modal_btn').addEventListener('click', onClick);
+    document.querySelector('.modal_close').addEventListener('click', offClick);
+
+};
+
+//영수증 내용 출력 부분
+const from = document.querySelector("#From");
+const amount = document.querySelector("#Amount");
+const popUpButton = document.querySelector("#modal_btn");
+const receiptAccount = document.querySelector("#receiptAccount");
+const receiptSelect = document.querySelector("#receiptSelect");
+const receiptAmount = document.querySelector("#receiptAmount");
+const hash = document.querySelector("#Tx");
+
+//hash가 비어있는 경우, showAlert() 함수 실행, 아닌 경우 getReceipt() 함수 실행
+function handleRecipt() {
+    if (hash.innerText == "") {
+        showAlert();
+    } else {
+        getRecipt();
+    }
+}
+
+//hash가 비어있는 경우, 아래와 같은 경고문 출력
+function showAlert() {
+    receiptAccount.innerText = "먼저 기부를 진행해주세요. (지갑 계좌를 입력하세요.)";
+    receiptSelect.innerText = "먼저 기부를 진행해주세요. (기부 대상자를 선택하세요.)";
+    receiptAmount.innerText = "먼저 기부를 진행해주세요. (기부 금액을 입력하세요.)";
+}
+
+//hash가 정상적으로 생성된 경우, 영수증 출력
+function getRecipt() {
+    receiptAccount.innerText = from.value;
+    receiptSelect.innerText = `${to.value}`;
+    receiptAmount.innerText = `${amount.value} ETH (수수료: ${amount.value * 0.02} ETH)`;
+}
+
+popUpButton.addEventListener("click", handleRecipt);
+
+```
+<img src="https://user-images.githubusercontent.com/82254874/153420267-53bf2278-7d90-4e75-ba54-8c1ef6225587.jpg" width="500" height="400">
+  
+  
 
 
   
