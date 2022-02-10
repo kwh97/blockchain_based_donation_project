@@ -15,7 +15,7 @@
 
 <br>
 
-🔗<strong> 사이트 예시 : </strong>  www.naver.com <br><br>
+🔗<strong> 사이트 예시 : </strong>  https://kwh97.github.io/blockchain_based_donation_project/ <br><br>
 📧<strong> Contact : </strong> zzzang0512@naver.com <br><br>
 🔖<strong> Blog : </strong> <a href="kwh97.tistory.com">kwh97.tistory.com</a> 
 
