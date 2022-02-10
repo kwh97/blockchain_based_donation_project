@@ -1,0 +1,256 @@
+/*--------------------------------------웹 페이지 기본 설정-----------------------------------------*/
+* {
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  font-family: "Noto Sans KR", sans-serif;
+  transition-duration: 0.3s;
+}
+
+/*폰트 사이즈 힌번에 조절*/
+.coment1 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.coment2 {
+  font-size: 17px;
+}
+
+.coment3 {
+  cursor: pointer;
+}
+
+.coment4 {
+  font-weight: 700;
+}
+
+/*body(화면 전체 색 조정) = wrap을 감싸는 전체화면*/
+body {
+  background-color: #e1e1e1;
+  padding: 2rem;
+}
+
+/*wrap = 기부선택 영영과 기부하기 영역을 합친 container box*/
+.wrap {
+  display: flex;
+  margin-top: -20px;
+  margin-left: 30px;
+}
+
+/*기부 대상 선택 화면 디자인 (페이지의 왼쪽 영역)*/
+.select {
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #f0f0f0;
+  height: 860px;
+}
+
+.select > h1 {
+  margin-left: 24px;
+}
+
+.select > li {
+  flex: 1;
+  display: flex;
+  margin-left: 24px;
+}
+
+.select > li > .icon_image {
+  width: 140px;
+  height: 140px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15rem;
+  margin-top: 20px;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.7), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.select > li > .icon_image > img {
+  width: 150px;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.select > li > ul {
+  width: 500px;
+  height: 200px;
+  margin-left: 40px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.2),
+    0 8px 16px -8px rgba(0, 0, 0, 0.01), 0 -6px 16px -6px rgba(0, 0, 0, 0.1);
+}
+
+.select > li > ul > li {
+  margin-top: 5px;
+}
+
+.select > .coment3:hover {
+  cursor: pointer;
+}
+
+/*기부금 송금하는 영역 디자인 (페이지의 오른쪽 영역)*/
+.container {
+  width: 800px;
+  height: 860px;
+  margin-top: 16px;
+  background: #fff;
+  margin-left: 20px;
+  border-radius: 5px;
+  padding-left: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input {
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 1em;
+}
+button {
+  margin: 2em 0;
+  padding: 1em 4em;
+  display: block;
+}
+
+#instructor {
+  padding: 1em;
+  background-color: #fff;
+  margin: 1em 0;
+}
+
+.buttons {
+  margin-top: -25px;
+  display: flex;
+  height: 100px;
+}
+
+.hash {
+  margin-top: -10px;
+}
+
+/*영수증 조회 클릭 시 나오는 팝업 창 디자인*/
+#modal_btn {
+  margin-left: 30px;
+}
+
+.modal_wrap {
+  display: none;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background: #eee;
+  z-index: 2;
+  border-radius: 10px;
+}
+.black_bg {
+  display: none;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modal_close {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+.modal_close > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(https://img.icons8.com/metro/26/000000/close-window.png);
+  text-indent: -9999px;
+}
+
+.receipt_title {
+  text-align: center;
+}
+
+.receipt_text {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+/* 메뉴 사이 여백 선, 영역 조절*/
+hr {
+  margin-left: -5px;
+  width: 95%;
+}
+
+/*페이지내 기부하기 버튼 디자인, placeholder  */
+#NodeInfo,
+#checkBalance,
+#Balance,
+#Account,
+#From,
+#To,
+#Amount,
+#Transfer,
+#modal_btn {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 2rem;
+}
+
+/*마우스 올려 놓았을 때 (hover 시) 디자인 주는 것*/
+#NodeInfo:hover,
+#Account:hover,
+#Balance:hover,
+#From:hover,
+#To:hover,
+#Amount:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#NodeInfo:hover::-webkit-input-placeholder,
+#Account:hover::-webkit-input-placeholder,
+#Balance:hover::-webkit-input-placeholder,
+#From:hover::-webkit-input-placeholder,
+#To:hover::-webkit-input-placeholder,
+#Amount:hover::-webkit-input-placeholder {
+  color: #fff;
+  transition: all, 0.4s;
+}
+
+#checkBalance:hover,
+#Transfer:hover,
+#modal_btn:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/*노트북 고려 반응형 디자인 구현*/
+@media screen and (max-width: 1700px) {
+  .select > li {
+    margin-left: 12px;
+  }
+
+  .select > li > ul {
+    width: 390px;
+  }
+
+  .coments {
+    padding-left: 20px;
+  }
+
+  .black_bg {
+    height: 1200px;
+  }
+}
