@@ -52,7 +52,7 @@
 <br><strong>>>Q&A 방식으로 서비스 및 수익 창출 계획 설명</strong>
 <br><br><br>
 <h3>4. TEAM & CONTACT</h3>
-<img src="https://user-images.githubusercontent.com/82254874/153411022-04967917-cffa-4ab8-ae14-3592e0f34450.jpg" width="800" height="600">
+
 <br><strong>>>팀원 소개 및 CONTACT</strong>
 <br><br><br>
 <h3>5. 기부페이지</h3>
