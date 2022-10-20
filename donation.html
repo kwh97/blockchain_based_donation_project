@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Kenneth Hu">
+    <title>기부 페이지</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="donation.css">
+    <script src="js/web3.min.js"></script>	
+</head>
+<body>
+    <div class="wrap">
+		<ul class="select">
+			<h1>기부 대상 선택하기</h1>
+			<li>
+				<div class = "icon_image">
+					<img src="image/person1.png">
+				</div>
+				<ul class="coments">
+					<li class="coment1">1번 대상자</li>
+					<li class="coment2"><br>#지갑 주소</li>
+					<li class="coment3" id="firstAddress">0x3d878aCb4Bf0EF0FA18EFf252a49E8dB67AfbB5F</li>
+					<li><br>위의 주소를 클릭시 자동으로 선택</li>
+				</ul>	
+			</li>
+			<li>
+				<div class = "icon_image">
+					<img src="image/person2.png">
+				</div>
+				<ul class="coments">
+					<li class="coment1">2번 대상자</li>
+					<li class="coment2"><br>#지갑 주소</li>
+					<li class="coment3" id="secondAddress">0x5d7cd7Bb3A54a23F61D915E07F9588fc4aF24686</li>
+					<li><br>위의 주소를 클릭시 자동으로 선택</li>
+				</ul>	
+			</li>
+			<li>
+				<div class = "icon_image">
+					<img src="image/person3.png">
+				</div>
+				<ul class="coments">
+					<li class="coment1">3번 대상자</li>
+					<li class="coment2"><br>#지갑 주소</li>
+					<li class="coment3" id="thirdAddress">0xc0b42CD8a67f9f679b794871Ae01e626d90911C5</li>
+					<li><br>위의 주소를 클릭시 자동으로 선택</li>
+				</ul>	
+			</li>
+		</ul>
+		<div class="container">
+        <h1>기부하기</h1>
+			<label for="name" class="col-lg-2 control-label"><h3>NodeInfo</h3></label>
+            <input id="NodeInfo" type="text" placeholder="ganache와 연동되지 않았습니다.  먼저 ganache를 실행하세요.">
+			<hr>
+            <label for="name" class="col-lg-2 control-label"><h3>잔액조회</h3></label>
+			<p>지갑 계좌 : &nbsp &nbsp<input id="Account" type="text" placeholder="지갑 계좌를 입력해주세요."> </p>
+            <p>잔액 : &nbsp &nbsp<input id="Balance" type="text" placeholder="계좌를 입력 후 조회하기 버튼을 눌러 잔액을 확인하세요."></p>
+			<button class="coment4" id="checkBalance">조회하기</button>
+			<hr>
+			<label for="name" class="col-lg-2 control-label"><h3>송금하기</h3></label>
+			<p>기부자 지갑 : &nbsp &nbsp <input id="From" type="text" placeholder="지갑 계좌를 입력해주세요."> </p>
+			<p>기부 대상 : &nbsp &nbsp <input id="To" type="text" placeholder="기부 대상을 선택하세요."></p>
+            <p>기부 금액 : &nbsp &nbsp<input id="Amount" type="text" placeholder="기부 금액을 숫자로 입력해주세요."></p>
+			<div class="buttons">
+            <button class="coment4" id="Transfer">송금하기</button>
+				<button type='button' class="coment4" id="modal_btn">영수증 조회</button>
+				<button type='button' onclick="location.href='index.html'" class="coment4" id="modal_btn">홈페이지로 돌아가기</button>
+				<div class="black_bg"></div>
+				<div class="modal_wrap">
+						<div class="modal_close"><a href="#"></a></div>
+						<div class="receipt">
+							<h1 class="receipt_title">donation receipt</h1>
+							<h4 class="receipt_text">계좌:<p id="receiptAccount"></p></h4>
+							<h4 class="receipt_text">선택 대상자:<p id="receiptSelect"></p></h4>
+							<h4 class="receipt_text">기부 금액:<p id="receiptAmount"></p></h4>
+							<h4 class="receipt_text">감사합니다.^^</h4>
+						</div>
+				</div>
+			</div>
+            <p class="hash">Transaction Hash : &nbsp  <span id="Tx"></span></p>
+		</div>
+    </div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/donation.js"></script>
+</body>
+</html>
