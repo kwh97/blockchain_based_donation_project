@@ -7,24 +7,16 @@
 🔖<strong> Blog : </strong><span>https://kwh97.tistory.com</span><br><br><br>
 
 
-<h3><strong>🛠 사용 툴 및 라이브러리 🛠</strong></h3>   
+<h3><strong>🛠 사용 툴 및 참고 🛠</strong></h3>   
 
-<img src="https://img.shields.io/badge/VisualStudioCode-32AAFF?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Ganache-8B4F1D?style=flat-square&logo=Ganache&logoColor=CD1039"/> <img src="https://img.shields.io/badge/Web3.js-FF8C0A?style=flat-square&logo=web3.js&logoColor=white"/><br>
+<img src="https://img.shields.io/badge/VisualStudioCode-32AAFF?style=flat-square&logo=visualstudiocode&logoColor=white"/> <img src="https://img.shields.io/badge/Ganache-8B4F1D?style=flat-square&logo=Ganache&logoColor=CD1039"/> <img src="https://img.shields.io/badge/BlockChain-black?style=flat-square&logo=blockchain&logoColor=white"/> <img src="https://img.shields.io/badge/Ethereum-blue?style=flat-square&logo=ethereum&logoColor=white"/><br>
 - 'Ganache'란 가상의 암호화폐(이더리움)과 계좌 번호를 부여하는 프로그램으로 프로젝트에서 web3.js 와 연동하여 암호화폐 기부 기능을 임시로 구현하기 위해 사용.
 
 <br><br>
 
 <h3><strong>📒 사용 기술 📒</strong></h3>
 
-<img src="https://img.shields.io/badge/HTML-red?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-blue?style=flat-square&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JAVASCRIPT-yellow?style=flat-square&logo=javascript&logoColor=white"/>
-
-<br><br>
-
-<h3>💡첫 번째 프로젝트 회고</h3>
-<strong>&nbsp &nbsp &nbsp다음 프로젝트를 위한 보완점</strong><br><br>
-<span>&nbsp &nbsp - &nbsp HTML, CSS : HTML과 CSS를 깔끔하게 작성하는데 미숙함이 있었음. 2차 프로젝트에서는 보완이 필요</span><br>
-<span>&nbsp &nbsp - &nbsp 적은 기능 : 아직까지 실력의 문제로 많은 기능을 구현하지 못함. 완벽한 서비스 개발을 위해 추가적인 기능 구현이 필요</span><br>
-<span>&nbsp &nbsp - &nbsp 디자인 : 사용자 친화적인 디자인을 구현하지 못함. 보완 필요</span><br>
+<img src="https://img.shields.io/badge/HTML-red?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-blue?style=flat-square&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/JAVASCRIPT-yellow?style=flat-square&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/Web3.js-FF8C0A?style=flat-square&logo=web3.js&logoColor=white"/>
 
 
 <br><br><br>
@@ -75,6 +67,12 @@
 <strong>web3.min.js - web3j 셋업 코드</strong><br><br>
 <strong>donation.js - 암호화폐 송금 및 기타 기능 구현</strong><br><br>
 
+<br><br>
 
+<h3>💡첫 번째 프로젝트 회고</h3>
+<strong>&nbsp &nbsp &nbsp다음 프로젝트를 위한 보완점</strong><br><br>
+<span>&nbsp &nbsp - &nbsp HTML, CSS : HTML과 CSS를 깔끔하게 작성하는데 미숙함이 있었음. 2차 프로젝트에서는 보완이 필요</span><br>
+<span>&nbsp &nbsp - &nbsp 적은 기능 : 아직까지 실력의 문제로 많은 기능을 구현하지 못함. 완벽한 서비스 개발을 위해 추가적인 기능 구현이 필요</span><br>
+<span>&nbsp &nbsp - &nbsp 디자인 : 사용자 친화적인 디자인을 구현하지 못함. 보완 필요</span><br>
 
 
