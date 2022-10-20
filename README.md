@@ -66,15 +66,15 @@
 <h2>기부 방법</h2>
 <strong>1. Ganache 실행하여, 가상의 암호화폐 계좌 및 키를 부여받는다.</strong><br><br>
 <strong>2. 홈페이지와 Ganache를 연동하여, 계좌 정보를 홈페이지로 가져온 뒤 잔액조회를 통해 계좌 잔액을 확인한다. </strong><br><br>
-<strong>3. 기부 대상을 선택하여 기부 진행 뒤, Hash와 영수증 조회를 통해 정상 기부 여부를 확인한다.</strong><br><br>
+<strong>3. 기부 대상을 선택하여 기부 진행 뒤, Hash와 영수증 조회를 통해 송금 성공 여부를 확인한다.</strong><br><br>
   
 <br><br><br>
 <h2>코드 설명</h2>
-<strong>index.html , main.css - 홈페이지 구성</strong><br><br>
+<strong>index.html , main.css - 메인 페이지 구성</strong><br><br>
 <strong>donation.html , donation.css - 기부페이지 구성</strong><br><br>
-<strong>web3.min.js - web3j 파일</strong><br><br>
-<strong>donation.js - 암호화폐 잔액조회, 기부금 송금</strong><br><br>
-<strong>click.js - 영수증 조회 등, 다양한 동적 기능을 구현하기 위한 파일</strong><br><br>
+<strong>web3.min.js - web3j 셋업 코드</strong><br><br>
+<strong>donation.js - 암호화폐 송금 및 기타 기능 구현</strong><br><br>
+
 
 
 
