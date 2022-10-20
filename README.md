@@ -34,16 +34,16 @@
 <h2>페이지 구성</h2>
 <br>
 <h3>1. 상단 메인 페이지</h3>
-<img src="https://user-images.githubusercontent.com/82254874/153410829-9d0dce22-6409-4415-8986-5bb59a191f45.jpg" width="800" height="400">
+<img src="https://user-images.githubusercontent.com/82254874/153410829-9d0dce22-6409-4415-8986-5bb59a191f45.jpg" width="600" height="400">
 <br><strong>  >>  'GIVE NOW' - 해당 메뉴를 통해 기부 페이지로 넘어가 기부를 진행할 수 있습니다.</strong>
 <br><br><br>
 <h3>2. INTRO</h3>
-<img src="https://user-images.githubusercontent.com/82254874/153410888-aef07cb5-e0bf-437a-8619-a0bcd8f83367.jpg" width="800" height="400">
-<img src="https://user-images.githubusercontent.com/82254874/153410930-43586829-853d-404f-a767-8824778f1d16.jpg" width="800" height="400">
+<img src="https://user-images.githubusercontent.com/82254874/153410888-aef07cb5-e0bf-437a-8619-a0bcd8f83367.jpg" width="600" height="400">
+<img src="https://user-images.githubusercontent.com/82254874/153410930-43586829-853d-404f-a767-8824778f1d16.jpg" width="600" height="400">
 <br><strong>  >>  기존 기부 서비스가 가지고 있는 문제에 대해 설명한 뒤, 이에 대한 해결책을 제시합니다. </strong>
 <br><br><br>
 <h3>3. SERVICE</h3>
-<img src="https://user-images.githubusercontent.com/82254874/153410969-c5cb64cd-3437-4d3e-9ca0-b65bde8d36f0.jpg" width="800" height="600">
+<img src="https://user-images.githubusercontent.com/82254874/153410969-c5cb64cd-3437-4d3e-9ca0-b65bde8d36f0.jpg" width="600" height="600">
 <br><strong>  >>  어떠한 서비스를 제공하는지 Q&A 방식으로 간략하게 설명합니다.</strong>
 <br><br><br>
 <h3>4. TEAM & CONTACT</h3>
@@ -51,7 +51,7 @@
 <br><strong>  >>  프로젝트 팀원에 대해 간략히 소개합니다. </strong>
 <br><br><br>
 <h3>5. 'GIVE NOW' 버튼을 클릭하여 접속할 수 있는 기부 페이지</h3>
-<img src="https://user-images.githubusercontent.com/82254874/153415073-61ceb8a3-9dfd-4e34-bd88-1370c700f847.jpg" width="800" height="600">
+<img src="https://user-images.githubusercontent.com/82254874/153415073-61ceb8a3-9dfd-4e34-bd88-1370c700f847.jpg" width="600" height="600">
 <br><strong>  >>  기부 대상을 선택하여 기부를 진행할 수 있습니다. 또한 영수증 조회를 통해 정상 송금 여부를 확인할 수 있습니다. </strong>
 <br><br><br>
   
