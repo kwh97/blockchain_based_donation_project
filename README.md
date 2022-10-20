@@ -20,15 +20,17 @@
 
 <br><br>
 
+<h3>💡첫 번째 프로젝트 회고</h3>
+<strong>&nbsp &nbsp &nbsp다음 프로젝트를 위한 보완점</strong><br><br>
+<span>&nbsp &nbsp - &nbsp HTML, CSS : HTML과 CSS를 깔끔하게 작성하는데 미숙함이 있었다. 2차 프로젝트에서는 보완이 필요하다.</span><br>
+<span>&nbsp &nbsp - &nbsp 적은 기능 : 아직까지 실력의 문제로 많은 기능을 구현하지 못했다. 완벽한 서비스 개발을 위해서는 추가적인 기능 구현이 필요하다.</span><br>
+<span>&nbsp &nbsp - &nbsp 디자인 : 사용자 친화적인 디자인을 구현하지 못한 것 같다. 다음 프로젝트에서 더욱 신경써야 할 듯 하다.</span><br>
 
 
+<br><br><br>
 
 
-
-
-<br><br>
-
-<h2>프로젝트 목적</h2>
+<h3>프로젝트 목적</h2>
 <img src="https://user-images.githubusercontent.com/82254874/153393686-02dd93d3-63e1-4d86-9a89-e7a3a4dfa60d.jpg" width="800" height="400">
 <br>
 <strong>1. 기존에 우려되었던 기부금 횡령 및 비리 문제를 방지</strong><br><br>
