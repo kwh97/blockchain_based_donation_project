@@ -22,9 +22,9 @@
 
 <h3>💡첫 번째 프로젝트 회고</h3>
 <strong>&nbsp &nbsp &nbsp다음 프로젝트를 위한 보완점</strong><br><br>
-<span>&nbsp &nbsp - &nbsp HTML, CSS : HTML과 CSS를 깔끔하게 작성하는데 미숙함이 있었다. 2차 프로젝트에서는 보완이 필요하다.</span><br>
-<span>&nbsp &nbsp - &nbsp 적은 기능 : 아직까지 실력의 문제로 많은 기능을 구현하지 못했다. 완벽한 서비스 개발을 위해 추가적인 기능 구현이 필요하다.</span><br>
-<span>&nbsp &nbsp - &nbsp 디자인 : 사용자 친화적인 디자인을 구현하지 못한 것 같다. 다음 프로젝트에서 더욱 신경써야 할 듯 하다.</span><br>
+<span>&nbsp &nbsp - &nbsp HTML, CSS : HTML과 CSS를 깔끔하게 작성하는데 미숙함이 있었음. 2차 프로젝트에서는 보완이 필요</span><br>
+<span>&nbsp &nbsp - &nbsp 적은 기능 : 아직까지 실력의 문제로 많은 기능을 구현하지 못함. 완벽한 서비스 개발을 위해 추가적인 기능 구현이 필요</span><br>
+<span>&nbsp &nbsp - &nbsp 디자인 : 사용자 친화적인 디자인을 구현하지 못함. 보완 필요</span><br>
 
 
 <br><br><br>
