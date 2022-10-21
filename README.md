@@ -1,6 +1,6 @@
 <h1>블록체인 기반 기부 서비스</h1>
 
-<strong>📌 블록네이션, 첫 번째 프로젝트</strong><br><br><br>
+<strong>📌 블록네이션, 첫 번째 프로젝트(2021.12)</strong><br><br><br>
 <h3>암호 화폐를 이용한 1대1 송금 기반의 투명한 기부 플랫폼</h3>
 🔗<strong> 사이트 예시 : </strong><span>https://kwh97.github.io/blockchain_based_donation_project/</span><br><br>
 📧<strong> Contact : </strong><span>zzzang0512@naver.com</span><br><br>
